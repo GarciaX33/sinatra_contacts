@@ -1,0 +1,44 @@
+<h2>Contacts Info</h2>
+
+<% @info.each do |contact| %>
+<% end %>
+
+<h4>Add a Person to Contacts:</h4>
+
+<div class="form-group">
+<form action="/" method="post">
+    <label class="type" for="inlineFormCustomSelect">Contact Type</label>
+     <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name="type">
+       <option value="Personal">Personal</option>
+       <option value="Business">Business</option>
+     </select><br>
+     <br>
+
+     <label for="first_name">First Name</label>
+     <input id="first_name" name="first_name" class="form-control" type="text"><br>
+
+     <label for="last_name">Last Name</label>
+     <input id="last_name" name="last_name" class="form-control" type="text"><br>
+
+     <label for="job_title">Job Title</label>
+     <input id="job_title" name="job_title" class="form-control" type="text"><br>
+
+     <label for="company">Company</label>
+     <input id="company" name="company" class="form-control" type="text"><br>
+
+     <label for="address">Street Address</label>
+     <input id="address" name="address" class="form-control" type="text"><br>
+
+     <label for="city">City</label>
+     <input id="city" name="city" class="form-control" type="text"><br>
+
+     <label for="state">State</label>
+     <input id="state" name="state" class="form-control" type="text"><br>
+
+     <label for="zip">Zip Code</label>
+     <input id="zip" name="zip" class="form-control" type="number"><br>
+
+ </div>
+
+ <button type="submit" class="btn btn-info">Submit!</button>
+</form><br><br>
